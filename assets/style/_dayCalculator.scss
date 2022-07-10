@@ -1,0 +1,70 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-day-body;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    position: absolute;
+    width: 380px;
+    height: 500px;
+    background-color: $background-day-calculator;
+    border-radius: 20px;
+    font-size: 15px;
+    
+    .theme-day {
+      margin: 20px 0px 10px 25px;
+      color: $primary-day-color;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+    }
+  }
+}
+
+#day-theme {
+  #display-day {
+    background-color: $display-color;
+  @include display;
+    #previous-day {
+      @include previous;
+    }
+    #result-day {
+      @include result;
+    }
+  }
+
+  #buttons-day {
+    position: relative;
+    margin-left: 25px;
+
+    .bigger{
+      width: 160px;
+    }
+
+    button {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      @include button;
+    }
+
+    button:hover {
+      background-color: $background-day-hover;
+    }
+
+    .btn-op-right {
+      background-color: $primary-day-color;
+      color: $text-day-primary;
+    }
+    .btn-op-top {
+      background-color: $secundary-day-color;
+    }
+    .btn-num,
+    .btn-op-one {
+      background-color: $third-day-color;
+    }
+  }
+}

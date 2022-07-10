@@ -1,0 +1,54 @@
+#night-theme {
+  display: none;
+  .theme-night {
+    margin: 20px 0px 10px 25px;
+    color: $primary-night-color;
+    background-color: $background-night-calculator;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  #display-night {
+    background-color: $display-color-night;
+    @include display;
+    #previous-night {
+      color: $text-night-primary;
+      @include previous;
+    }
+    #result-night {
+      color: $text-night-primary;
+      @include result;
+    }
+  }
+
+  #buttons-night {
+    position: relative;
+    margin-left: 25px;
+
+    .bigger {
+      width: 160px;
+    }
+    
+    button {
+      color: $text-night-primary;
+      @include button;
+    }
+
+    button:hover {
+      background-color: $background-night-hover;
+    }
+
+    .btn-op-right {
+      background-color: $primary-night-color;
+      color: $text-night-primary;
+    }
+    .btn-op-top {
+      background-color: $secundary-night-color;
+    }
+    .btn-num,
+    .btn-op-one {
+      background-color: $third-night-color;
+    }
+  }
+}

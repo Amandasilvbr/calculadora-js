@@ -1,0 +1,51 @@
+// Day calculator
+$background-day-body: #e5e5e5;
+$background-day-calculator: #f1f2f3;
+$background-day-hover: #d2d2d2;
+$primary-day-color: #3595ab;
+$secundary-day-color: #b9c0ff;
+$third-day-color: white;
+$text-day-primary: white;
+$text-day-secundary: black;
+$display-color-day: rgba(255, 255, 255, 0.716);
+
+// Night calculator
+$background-night-body: #2e2f38;
+$display-color-night: #2e2f38;
+$background-night-hover: #d2d2d2;
+$background-night-calculator: #17171c;
+$primary-night-color: #9757d7;
+$secundary-night-color: #9c8ec1;
+$third-night-color: #2e2f38;
+$text-night-primary: white;
+
+// Buttons size mixin
+@mixin button {
+  width: 74.5px;
+  height: 50px;
+  margin: 0px 7px 7px 0px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+// Display general config
+@mixin display {
+    height: 100px;
+    padding: 10px 20px 0px 0px;
+    margin: 5px 25px 25px 25px;
+}
+
+// Display previous mixin
+@mixin previous {
+  font-family: "Poppins", sans-serif;
+  opacity: 50%;
+  text-align: right;
+}
+
+// Display result mixin
+@mixin result {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: right;
+}
