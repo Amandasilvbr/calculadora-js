@@ -15,5 +15,5 @@ function processNight(btnValueNight) {
     btnValueNight === "=" || btnValueNight === "C" || btnValueNight === "CE" ? previousNight.textContent = previousNight.textContent : previousNight.textContent += btnValueNight
 
     if (btnValueNight === "C") { resultNight.textContent = ""; previousNight.textContent = "" }
-    if (btnValueNight === "=") { resultNight.textContent = eval(previousNight.textContent).toFixed(12) }
+    if (btnValueNight === "=") { resultNight.textContent = eval(previousNight.textContent) }
 }

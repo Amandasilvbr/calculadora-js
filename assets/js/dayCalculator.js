@@ -15,5 +15,5 @@ function processDay(btnValueDay) {
     btnValueDay === "=" || btnValueDay === "C" || btnValueDay === "CE" ? previousDay.textContent = previousDay.textContent : previousDay.textContent += btnValueDay
 
     if (btnValueDay === "C") { resultDay.textContent = ""; previousDay.textContent = "" }
-    if (btnValueDay === "=") { resultDay.textContent = eval(previousDay.textContent).toFixed(12) }
+    if (btnValueDay === "=") { resultDay.textContent = eval(previousDay.textContent) }
 }
